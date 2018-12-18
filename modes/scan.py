@@ -108,11 +108,13 @@ def scan(target, paramData, verbose, encoding, headers, delay, timeout, skipDOM,
                         print('%s Payload: %s' % (good, printVector))
                         print('%s Efficiency: %i' % (info, bestEfficiency))
                         print('%s Confidence: %i' % (info, confidence))
+                        """
                         if not skip:
                             choice = input(
                                 '%s Would you like to continue scanning? [y/N] ' % que).lower()
                             if choice != 'y':
                                 quit()
+                        """
                     elif bestEfficiency > minEfficiency:
                         print(('%s-%s' % (red, end)) * 60)
                         print('%s Payload: %s' % (good, printVector))

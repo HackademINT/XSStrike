@@ -12,7 +12,7 @@ minEfficiency = 90  # payloads below this efficiency will not be displayed
 
 delay = 0  # default delay between http requests
 threadCount = 10  # default number of threads
-timeout = 10  # default number of http request timeout
+timeout = 100  # default number of http request timeout
 
 # attributes that have special properties
 specialAttributes = ['srcdoc', 'src']
