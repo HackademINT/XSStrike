@@ -135,9 +135,11 @@ def scan(target, paramData, verbose, encoding, headers, delay, timeout, skipDOM,
                         print('%s Payload: %s' % (good, printVector))
                         print('%s Efficiency: %i' % (info, 100))
                         print('%s Confidence: %i' % (info, 10))
+                        """
                         if not skip:
                             choice = input(
                                 '%s Would you like to continue scanning? [y/N] ' % que).lower()
                             if choice != 'y':
                                 quit()
+                        """
         print ('')
